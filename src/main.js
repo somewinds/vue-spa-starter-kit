@@ -4,8 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ELEMENT from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 import moment from 'moment'
 import echarts from 'echarts'
 import BaiduMap from 'vue-baidu-map'
@@ -26,7 +26,7 @@ require('froala-editor/css/froala_style.min.css')
 import VueFroala from 'vue-froala-wysiwyg'
 Vue.use(VueFroala);
 
-Vue.use(ElementUI, { size: 'medium' });
+Vue.use(ELEMENT, { size: 'medium' });
 Vue.use(BaiduMap, {
   ak: 'yc3n5fiQQVezzrpESqpE6BCM'
 })
