@@ -116,7 +116,13 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ])
-  ]
+  ],
+  externals: {
+    'vue': 'Vue',
+    'vuex': 'Vuex',
+    'vue-router': 'VueRouter',
+    'element-ui': 'ELEMENT'
+  }
 })
 
 if (config.build.productionGzip) {

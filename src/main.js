@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
+// 如果是开发环境
+if(process.env.NODE_ENV === 'development'){
+	require('element-ui/lib/theme-chalk/index.css')
+}
 import ELEMENT from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 import moment from 'moment'
